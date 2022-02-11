@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-4xl text-center mt-12 mb-4">Welcome to my <span class="font-semibold text-emerald-500">Bank
+            System</span> !!!</h1>
+    <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto mt-8 ">
+        <div class="bg-lime-300 p-8 rounded">
+            <h2 class="text-2xl">Diposite</h2>
+            <h3 class="text-4xl">$<span id="deposite-total">00</span> </h3>
+        </div>
+
+        <div class="bg-pink-300 p-8 rounded">
+            <h2 class="text-2xl">Withdraw</h2>
+            <h3 class="text-4xl">$<span id="withdraw-total">00</span></h3>
+        </div>
+
+        <div class="bg-blue-300 p-8 rounded">
+            <h2 class="text-2xl">Balance</h2>
+            <h3 class="text-4xl">$<span id="balance-total">1700</span> </h3>
+        </div>
+    </div>
+    <!-- Deposite and withdraw -->
+    <section>
+        <div class="grid grid-cols-2 gap-4 mt-8 w-3/4 mx-auto">
+            <div class="bg-red-200 p-8 rounded">
+                <h3 class="text-2xl">Please Deposite</h3>
+                <div>
+                    <input id="deposite-input" class="border-2 border-zinc-600 block mb-2 w-3/4 bg-zinc-100 px-2"
+                        type="text" placeholder="Deposite amount">
+                    <button id="deposite-btn"
+                        class="bg-yellow-600 p-2 block mt-2 rounded-xl font-semibold">Deposite</button>
+                </div>
+            </div>
+            <div class="bg-purple-200 p-8 rounded">
+                <h3 class="text-2xl">Please Withdraw</h3>
+                <div>
+                    <input id="withdraw-input" class="border-2 border-zinc-600 block mb-2 w-3/4 bg-zinc-100 px-2"
+                        type="text" placeholder="Deposite amount">
+                    <button id="withdraw-btn"
+                        class="bg-yellow-600 p-2 block mt-2 rounded-xl font-semibold">Withdraw</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="js/banking.js"></script>
+</body>
+
+</html>
